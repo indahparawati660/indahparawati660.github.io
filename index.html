@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RANA CELULER - Solusi Digital Anda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS RESET & BASE */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* HERO SECTION */
+        header {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&q=80&w=1600') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        /* SERVICES SECTION */
+        #services {
+            padding: 80px 20px;
+            background: #f9f9f9;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background: #007bff;
+            display: block;
+            margin: 10px auto;
+        }
+
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: white;
+            padding: 40px 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-card i {
+            font-size: 3rem;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            margin-bottom: 15px;
+        }
+
+        /* ABOUT / INFO SECTION */
+        #about {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+
+        .about-image img {
+            width: 100%;
+            display: block;
+        }
+
+        /* CONTACT SECTION */
+        #contact {
+            padding: 80px 20px;
+            background: #222;
+            color: white;
+            text-align: center;
+        }
+
+        .contact-info {
+            margin-top: 30px;
+            font-size: 1.1rem;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+        }
+
+        footer {
+            padding: 20px;
+            background: #111;
+            color: #777;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.5rem; }
+            .section-title { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO -->
+    <header>
+        <h1>RANA CELULER</h1>
+        <p>Pusat Gadget, Pulsa, & Aksesoris Terlengkap di Sliyeg. Menghubungkan Anda dengan Dunia Digital.</p>
+        <a href="#services" class="btn">Lihat Layanan</a>
+    </header>
+
+    <!-- SERVICES -->
+    <section id="services">
+        <h2 class="section-title">Layanan Kami</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <h3>Pulsa & Data</h3>
+                <p>Top-up pulsa dan paket internet semua operator dengan harga kompetitif dan proses instan.</p>
+            </div>
+            <div class="service-card">
+                <h3>Aksesori Gadget</h3>
+                <p>Casing, charger, earphone, dan pelindung layar berkualitas untuk melindungi ponsel Anda.</p>
+            </div>
+            <div class="service-card">
+                <h3>Penjualan HP</h3>
+                <p>Tersedia berbagai merk smartphone terbaru dengan garansi resmi dan harga terbaik.</p>
+            </div>
+            <div class="service-card">
+                <h3>Servis Ringan</h3>
+                <p>Solusi cepat untuk masalah software, ganti baterai, atau kendala teknis ponsel lainnya.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800" alt="Store Front">
+        </div>
+        <div class="about-text">
+            <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Siapa Kami?</h2>
+            <p><strong>RANA CELULER</strong> dikelola langsung oleh <strong>Bapak Rana</strong>, berkomitmen memberikan pelayanan terbaik bagi warga Tambi Lor dan sekitarnya. Kami memahami bahwa di era digital ini, konektivitas adalah segalanya. Oleh karena itu, kami hadir untuk memastikan perangkat Anda selalu dalam kondisi prima dan selalu terhubung.</p>
+            <br>
+            <p>Kepuasan pelanggan adalah prioritas utama kami. Datang dan buktikan keramahan layanan kami!</p>
+        </div>
+    </section>
+
+    <!-- CONTACT / ADDRESS -->
+    <section id="contact">
+        <h2 class="section-title" style="color: white;">Lokasi Kami</h2>
+        <div class="contact-info">
+            <p><strong>Alamat:</strong> Blok Bujed Kel. Tambi Lor, Kec. Sliyeg</p>
+            <p>Kabupaten Indramayu, Jawa Barat 45281</p>
+            <p><strong>Owner:</strong> RANA</p>
+            <br>
+            <p style="color: #007bff;">Buka Setiap Hari: 08.00 - 21.00 WIB</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2026 RANA CELULER Indramayu. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
